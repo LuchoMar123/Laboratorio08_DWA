@@ -24,7 +24,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script_stop: true
           script: |
-            cd /root/repos/skeleton-node-ms
+            cd /home/ubuntu/repos/Laboratorio08_DWA
             git pull origin main
             docker-compose restart
             echo "ok"
